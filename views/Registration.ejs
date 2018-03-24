@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link href="css/bootstrap.min.css" rel="text/css">
+        <link rel="text/css" href="css/datepicker.css">
+        <title>Reg</title>
+       
+</head>
+<body>
+                <script type="text/javascript" src="https://formden.com/static/cdn/formden.js"></script>
+                <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+                <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css" />
+<div class="container">
+<div class="row">
+<div class="page-header">
+<h1>Simple Application</h1>
+</div>
+<form class="form-horizontal" role="form" method="post" action="/user/Doregister">
+ 
+<div class="form-group">
+<label for="firstName" class="col-sm-2 control-label">First Name:</label>
+<div class="col-sm-6">
+<input type="text" name="first_name" class="form-control" id="first_name" placeholder="First Name">
+</div>
+</div>
+ 
+<div class="form-group">
+<label for="lastName" class="col-sm-2 control-label">Last Name:</label>
+<div class="col-sm-6">
+<input type="text" name="last_name" class="form-control" id="last_name" placeholder="Last Name">
+</div>
+</div>
+ 
+
+<div class="form-group">
+<label for="userName" class="col-sm-2 control-label">Email:</label>
+<div class="col-sm-6">
+<input type="email" name="email_id" class="form-control" id="email_id" placeholder="User Name">
+</div>
+</div>
+    
+<div class="form-group">
+<label for="passwd" class="col-sm-2 control-label">Password:</label>
+<div class="col-sm-6">
+<input type="password" name="password" class="form-control" id="password"  autocomplete="on|off" placeholder="Password">
+</div>
+</div>
+
+<div class="form-group">
+<label for="dob" class="col-sm-2 control-label">DOB:</label>
+ <div class="col-sm-6">
+ <input type="text" name="date_of_birth" class="form-control datepicker" id="date_of_birth" placeholder=" Date of Birth">
+ </div>
+ </div>
+
+<div class="form-group">
+<label for="" class="col-sm-2 control-label">Gender:</label>
+<div class="col-sm-6">
+<label class="radio-inline">
+<input type="radio" name="gender" id="gender1" value="male">Male
+</label>
+<label class="radio-inline">
+<input type="radio" name="gender" id="gender2" value="female">Female
+</label>
+ 
+</div>
+</div>
+
+<div class="form-group">
+        <label for="passwd" class="col-sm-2 control-label">Street:</label>
+        <div class="col-sm-6">
+        <input type="text" name="street" class="form-control" id="street" placeholder="street">
+        </div>
+ </div>
+
+ <div class="form-group">
+        <label for="passwd" class="col-sm-2 control-label">City:</label>
+        <div class="col-sm-6">
+        <input type="text" name="city" class="form-control" id="city" placeholder="city">
+        </div>
+ </div>
+
+ <div class="form-group">
+        <label for="passwd" class="col-sm-2 control-label">District:</label>
+        <div class="col-sm-6">
+        <input type="text" name="distrtict" class="form-control" id="distrtict" placeholder="district">
+        </div>
+ </div>
+
+ <div class="form-group">
+        <label for="passwd" class="col-sm-2 control-label">Country:</label>
+        <div class="col-sm-6">
+        <input type="text" name="country" class="form-control" id="country" placeholder="country">
+        </div>
+ </div>
+
+ <div class="form-group">
+        <label for="passwd" class="col-sm-2 control-label">PinCode:</label>
+        <div class="col-sm-6">
+        <input type="text" name="pin_code" class="form-control" id="pin_code" placeholder="pincode">
+        </div>
+ </div>
+
+ 
+
+
+ 
+<div class="form-group">
+<div class="col-sm-offset-2 col-sm-10">
+<button type="submit" class="btn btn-primary" id="register">Register</button>
+</div>
+</div>
+ 
+</form>
+ 
+</div><!-- end for class "row" -->
+</div><!-- end for class "container" "-->
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- Include Date Range Picker -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+<script>
+                $(document).ready(function(){
+                        var date_input=$('input[name="date_of_birth"]'); //our date input has the name "date"
+                        var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+                        date_input.datepicker({
+                                format: 'mm/dd/yyyy',
+                                container: container,
+                                todayHighlight: true,
+                                autoclose: true,
+                        })
+                })
+        </script>
+</body>
+
+</script>
+</html>
